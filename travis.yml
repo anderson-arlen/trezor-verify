@@ -1,0 +1,9 @@
+sudo: required
+
+services:
+    - docker
+
+script:
+    - docker build -t anderson-arlen/trezor-verify .
+    - docker run anderson-arlen/trezor-verify npm run lint
+    - docker run anderson-arlen/trezor-verify npm run test

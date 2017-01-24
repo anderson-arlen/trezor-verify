@@ -1,0 +1,7 @@
+test/
+.editorconfig
+.eslintignore
+.eslintrc.json
+.gitignore
+travis.yml
+Dockerfile

@@ -1,0 +1,32 @@
+{
+  "name": "trezor-verify",
+  "version": "1.0.0",
+  "description": "Easy Trezor signature verification for trezor/connect",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha \"test/**/*.js\"",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "trezor",
+    "bitcoin",
+    "message",
+    "verify"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:anderson-arlen/trezor-verify.git"
+  },
+  "author": "Arlen Andersion <anderson.arlen+npm@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anderson-arlen/trezor-verify/issues"
+  },
+  "homepage": "https://github.com/anderson-arlen/trezor-verify",
+  "dependencies": {
+    "bitcore-lib": "^0.13.19"
+  },
+  "devDependencies": {
+    "should": "^11.1.2"
+  }
+}
