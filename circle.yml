@@ -1,0 +1,15 @@
+machine:
+    services:
+        - docker
+
+dependencies:
+    pre:
+        - docker build -t anderson-arlen/trezor-verify .
+
+lint:
+    post:
+        - docker run anderson-arlen/trezor-verify npm run lint
+
+test:
+    post:
+        - docker run anderson-arlen/trezor-verify npm run test
