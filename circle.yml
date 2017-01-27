@@ -3,10 +3,10 @@ machine:
         - docker
 
 dependencies:
-    pre:
-        - docker build -t anderson-arlen/trezor-verify .
+    override:
+        - docker build --rm=false -t anderson-arlen/trezor-verify .
 
 test:
-    post:
+    override:
         - docker run anderson-arlen/trezor-verify npm run lint
         - docker run anderson-arlen/trezor-verify npm run test
